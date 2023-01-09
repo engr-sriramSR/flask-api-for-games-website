@@ -1,0 +1,4 @@
+SQL_DATABASE_URL = "SQL URL"
+MONGO_DB_URL = "MongoDB URL"
+MONGO_DB_DATABASE = "MONGO DB Database"
+JWT_SECRET_KEY = "Secret key for the JWT tokens"
