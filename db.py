@@ -8,5 +8,5 @@ import os
 db = SQLAlchemy()
 mongodb = PyMongo()
 client = MongoClient(os.getenv("MONGO_DB_URL"))
-newdb = client[os.getenv("MONGO_DB_DATABASE")]
+newdb = client[os.getenv("MONGO_DB_DATABASE") or 'Games']
 grid_fs = gridfs.GridFS(newdb)
