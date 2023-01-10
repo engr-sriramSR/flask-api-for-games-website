@@ -7,8 +7,6 @@ import os
 
 db = SQLAlchemy()
 mongodb = PyMongo()
-MONGO_URL = os.getenv("MONGO_DB_URL")
-MONGO_DATABASE = os.getenv("MONGO_DB_DATABASE")
-client = MongoClient(MONGO_URL)
-newdb = client[MONGO_DATABASE]
+client = MongoClient(os.getenv("MONGO_DB_URL"))
+newdb = client[os.getenv("MONGO_DB_DATABASE")]
 grid_fs = gridfs.GridFS(newdb)
