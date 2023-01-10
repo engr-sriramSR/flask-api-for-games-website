@@ -10,3 +10,4 @@ pydantic
 flask-pydantic
 flask-cors
 psycopg2
+gunicorn
